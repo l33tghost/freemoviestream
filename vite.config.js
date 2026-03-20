@@ -29,7 +29,6 @@ export default defineConfig(({ mode }) => {
           '/watch?type=movie&id=1571470',
           '/watch?type=movie&id=617126'
         ],
-        readable: true,
         robots: [
           {
             userAgent: '*',
