@@ -1,17 +1,24 @@
 :root {
-  --netflix-red: #e50914;
-  --netflix-dark-red: #b2070f;
-  --netflix-black: #000000;
-  --netflix-dark-gray: #181818;
-  --netflix-medium-gray: #2f2f2f;
-  --netflix-light-gray: #808080;
-  --netflix-white: #ffffff;
-  --netflix-hover-gray: #404040;
-  --netflix-border: rgba(255, 255, 255, 0.1);
-  --netflix-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-  --netflix-gradient: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
-  --netflix-banner-overlay: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 50%, transparent 100%);
-  --netflix-card-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  --wd-primary: #fdbcfd;
+  --wd-secondary: #affdfd;
+  --wd-accent: #fbefc8;
+
+  --wd-bg: #0b0b12;
+  --wd-bg-soft: #141420;
+  --wd-card: #1a1a28;
+  --wd-card-2: #222235;
+
+  --wd-text: #ffffff;
+  --wd-text-muted: #b8b8c7;
+  --wd-border: rgba(255, 255, 255, 0.08);
+
+  --wd-shadow: 0 8px 32px rgba(0, 0, 0, 0.32);
+  --wd-shadow-pink: 0 10px 30px rgba(253, 188, 253, 0.22);
+  --wd-shadow-blue: 0 10px 30px rgba(175, 253, 253, 0.18);
+
+  --wd-gradient-main: linear-gradient(135deg, #0b0b12 0%, #171724 100%);
+  --wd-gradient-soft: linear-gradient(135deg, rgba(253, 188, 253, 0.12), rgba(175, 253, 253, 0.08));
+  --wd-banner-overlay: linear-gradient(to right, rgba(11, 11, 18, 0.92) 0%, rgba(11, 11, 18, 0.55) 50%, transparent 100%);
 }
 
 * {
@@ -22,8 +29,8 @@
 }
 
 body {
-  background-color: var(--netflix-black);
-  color: var(--netflix-white);
+  background-color: var(--wd-bg);
+  color: var(--wd-text);
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   line-height: 1.4;
   overflow-x: hidden;
@@ -35,16 +42,16 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--netflix-black);
+  background: var(--wd-bg);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--netflix-medium-gray);
-  border-radius: 4px;
+  background: rgba(253, 188, 253, 0.28);
+  border-radius: 999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--netflix-light-gray);
+  background: rgba(175, 253, 253, 0.45);
 }
 
 .btn {
@@ -57,47 +64,50 @@ body {
   gap: 8px;
   padding: 12px 24px;
   border: none;
-  border-radius: 4px;
+  border-radius: 14px;
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 700;
   cursor: pointer;
   text-decoration: none;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  -webkit-box-shadow: var(--netflix-card-shadow);
-          box-shadow: var(--netflix-card-shadow);
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-box-shadow: var(--wd-shadow);
+          box-shadow: var(--wd-shadow);
 }
 
 .btn-primary {
-  background: -o-linear-gradient(315deg, #e50914, #b2070f);
-  background: linear-gradient(135deg, #e50914, #b2070f);
-  color: var(--netflix-white);
-  border: 2px solid transparent;
+  background: linear-gradient(135deg, var(--wd-primary), var(--wd-secondary));
+  color: #111218;
+  border: 1px solid transparent;
 }
 
 .btn-primary:hover {
-  background: -o-linear-gradient(315deg, #b2070f, #e50914);
-  background: linear-gradient(135deg, #b2070f, #e50914);
   -webkit-transform: translateY(-2px);
       -ms-transform: translateY(-2px);
           transform: translateY(-2px);
-  -webkit-box-shadow: 0 12px 40px rgba(229, 9, 20, 0.4);
-          box-shadow: 0 12px 40px rgba(229, 9, 20, 0.4);
+  -webkit-box-shadow: var(--wd-shadow-pink);
+          box-shadow: var(--wd-shadow-pink);
+  filter: brightness(1.02);
 }
 
 .btn-secondary {
-  background-color: rgba(109, 109, 110, 0.7);
-  color: var(--netflix-white);
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--wd-text);
+  border: 1px solid rgba(253, 188, 253, 0.35);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
 }
 
 .btn-secondary:hover {
-  background-color: rgba(109, 109, 110, 0.9);
-  border-color: var(--netflix-white);
+  background: rgba(253, 188, 253, 0.1);
+  border-color: var(--wd-secondary);
+  color: var(--wd-secondary);
   -webkit-transform: translateY(-2px);
       -ms-transform: translateY(-2px);
           transform: translateY(-2px);
+  -webkit-box-shadow: var(--wd-shadow-blue);
+          box-shadow: var(--wd-shadow-blue);
 }
 
 .modal-overlay {
@@ -106,8 +116,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: -o-linear-gradient(315deg, rgba(0,0,0,0.8), rgba(20,20,20,0.9));
-  background: linear-gradient(135deg, rgba(0,0,0,0.8), rgba(20,20,20,0.9));
+  background: linear-gradient(135deg, rgba(11, 11, 18, 0.86), rgba(20, 20, 32, 0.94));
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,8 +128,8 @@ body {
           justify-content: center;
   z-index: 2000;
   padding: 20px;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
 }
 
 .loading-screen {
@@ -138,14 +147,14 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100vh;
-  background-color: var(--netflix-black);
+  background: var(--wd-gradient-main);
 }
 
 .loading-spinner {
   width: 50px;
   height: 50px;
-  border: 4px solid var(--netflix-medium-gray);
-  border-top: 4px solid var(--netflix-red);
+  border: 4px solid rgba(255, 255, 255, 0.12);
+  border-top: 4px solid var(--wd-primary);
   border-radius: 50%;
   -webkit-animation: spin 1s linear infinite;
           animation: spin 1s linear infinite;
@@ -163,7 +172,7 @@ body {
 }
 
 .loading-screen p {
-  color: var(--netflix-light-gray);
+  color: var(--wd-text-muted);
   font-size: 1.1rem;
 }
 
@@ -178,38 +187,45 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100vh;
-  background-color: var(--netflix-black);
+  background: var(--wd-gradient-main);
 }
 
 .error-content {
   text-align: center;
   padding: 40px;
-  background-color: var(--netflix-dark-gray);
-  border-radius: 8px;
-  border: 2px solid var(--netflix-red);
+  background: rgba(26, 26, 40, 0.92);
+  border-radius: 18px;
+  border: 1px solid rgba(253, 188, 253, 0.28);
+  -webkit-box-shadow: var(--wd-shadow);
+          box-shadow: var(--wd-shadow);
 }
 
 .error-content h1 {
-  color: var(--netflix-red);
+  color: var(--wd-primary);
   margin-bottom: 1rem;
 }
 
 .back-home-btn {
-  background-color: var(--netflix-red);
-  color: white;
+  background: linear-gradient(135deg, var(--wd-primary), var(--wd-accent));
+  color: #151515;
   border: none;
   padding: 12px 24px;
-  border-radius: 4px;
-  font-weight: bold;
+  border-radius: 14px;
+  font-weight: 700;
   cursor: pointer;
   margin-top: 1rem;
-  -webkit-transition: background-color 0.3s ease;
-  -o-transition: background-color 0.3s ease;
-  transition: background-color 0.3s ease;
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-box-shadow: var(--wd-shadow-pink);
+          box-shadow: var(--wd-shadow-pink);
 }
 
 .back-home-btn:hover {
-  background-color: var(--netflix-dark-red);
+  -webkit-transform: translateY(-2px);
+      -ms-transform: translateY(-2px);
+          transform: translateY(-2px);
+  filter: brightness(1.03);
 }
 
 @media (max-width: 768px) {
