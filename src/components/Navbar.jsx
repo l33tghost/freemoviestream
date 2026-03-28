@@ -61,8 +61,8 @@ const Navbar = ({ onSearch, searchResults, onItemClick, isSearching }) => {
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
           <img 
-            src="/logo/mstream-new.png" 
-            alt="MSTREAM Logo" 
+            src="/logo/watchden-logo-long-nobg.png" 
+            alt="WATCHDEN Logo" 
             className="logo-image"
           />
         </Link>
