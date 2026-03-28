@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Hls from "hls.js";
+const HlsPlayer = window.Hls;
 
 export default function LiveTV() {
   const [url, setUrl] = useState("");
@@ -28,19 +28,20 @@ export default function LiveTV() {
     }
   };
 
-  const playStream = (streamUrl) => {
-    setCurrentStream(streamUrl);
+const playStream = (streamUrl) => {
+  setCurrentStream(streamUrl);
 
-    const video = document.getElementById("video-player");
+  const video = document.getElementById("video-player");
+  const HlsPlayer = window.Hls;
 
-    if (Hls.isSupported()) {
-      const hls = new Hls();
-      hls.loadSource(streamUrl);
-      hls.attachMedia(video);
-    } else {
-      video.src = streamUrl;
-    }
-  };
+  if (HlsPlayer && HlsPlayer.isSupported()) {
+    const hls = new HlsPlayer();
+    hls.loadSource(streamUrl);
+    hls.attachMedia(video);
+  } else {
+    video.src = streamUrl;
+  }
+};
 
   return (
     <div className="live-tv-page">
