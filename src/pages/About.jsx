@@ -5,13 +5,13 @@ const About = () => {
   return (
     <div className="static-page">
       <div className="static-container">
-        <h1>About MStream</h1>
+        <h1>About WatchDen</h1>
         
         <div className="about-content">
           <section className="about-section">
-            <h2>Welcome to MStream</h2>
+            <h2>Welcome to WatchDen</h2>
             <p>
-              Welcome to MStream, your favorite destination for exploring the vast world of Movies and TV shows. 
+              Welcome to WatchDen, your favorite destination for exploring the vast world of Movies and TV shows. 
               Our mission is to provide an elegant and user-friendly interface for discovering new content, 
               tracking trending titles, and enjoying a seamless viewing experience.
             </p>
