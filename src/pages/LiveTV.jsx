@@ -6,27 +6,29 @@ export default function LiveTV() {
   const [channels, setChannels] = useState([]);
   const [currentStream, setCurrentStream] = useState("");
 
-  const loadPlaylist = async () => {
-    try {
-      const res = await fetch("https://api.allorigins.win/raw?url=" + url);
-      const text = await res.text();
+const loadPlaylist = async () => {
+  try {
+    const res = await fetch(`/playlist?url=${encodeURIComponent(url)}`);
+    const text = await res.text();
 
-      const lines = text.split("\n");
-      let parsed = [];
+    const lines = text.split("\n");
+    let parsed = [];
 
-      for (let i = 0; i < lines.length; i++) {
-        if (lines[i].startsWith("#EXTINF")) {
-          const name = lines[i].split(",")[1];
-          const stream = lines[i + 1];
+    for (let i = 0; i < lines.length; i++) {
+      if (lines[i].startsWith("#EXTINF")) {
+        const name = lines[i].split(",")[1];
+        const stream = lines[i + 1];
+        if (name && stream && stream.startsWith("http")) {
           parsed.push({ name, stream });
         }
       }
-
-      setChannels(parsed);
-    } catch (err) {
-      console.error("Failed to load playlist", err);
     }
-  };
+
+    setChannels(parsed.slice(0, 200));
+  } catch (err) {
+    console.error("Failed to load playlist", err);
+  }
+};
 
 const playStream = (streamUrl) => {
   setCurrentStream(streamUrl);
