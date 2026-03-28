@@ -72,6 +72,7 @@ const Navbar = ({ onSearch, searchResults, onItemClick, isSearching }) => {
           <Link to="/tv-shows" className="nav-link">TV Shows</Link>
           <Link to="/movies" className="nav-link">Movies</Link>
           <Link to="/popular" className="nav-link">Popular</Link>
+          <Link to="/live-tv" className="nav-link">Live TV</Link>
         </div>
 
         <div className="navbar-search-container">
@@ -163,6 +164,7 @@ const Navbar = ({ onSearch, searchResults, onItemClick, isSearching }) => {
             <Link to="/tv-shows" className="nav-link" onClick={closeMenu}>TV Shows</Link>
             <Link to="/movies" className="nav-link" onClick={closeMenu}>Movies</Link>
             <Link to="/popular" className="nav-link" onClick={closeMenu}>Popular</Link>
+            <Link to="/live-tv" className="nav-link" onClick={closeMenu}>Live TV</Link>
           </div>
         </div>
 
