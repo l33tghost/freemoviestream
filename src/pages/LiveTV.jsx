@@ -8,7 +8,7 @@ export default function LiveTV() {
 
   const loadPlaylist = async () => {
     try {
-      const res = await fetch("https://corsproxy.io/?" + url);
+      const res = await fetch("https://api.allorigins.win/raw?url=" + url);
       const text = await res.text();
 
       const lines = text.split("\n");
