@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Movies from './pages/Movies';
 import TVShows from './pages/TVShows';
 import Popular from './pages/Popular';
+import LiveTV from "./pages/LiveTV";
 import Watch from './pages/Watch';
 import About from './pages/About';
 import Disclaimer from './pages/Disclaimer';
@@ -60,6 +61,7 @@ function App() {
             <Route path="/movies" element={<Movies />} />
             <Route path="/tv-shows" element={<TVShows />} />
             <Route path="/popular" element={<Popular />} />
+            <Route path="/live-tv" element={<LiveTV />} />
             <Route path="/watch" element={<Watch />} />
             <Route path="/about" element={<About />} />
             <Route path="/disclaimer" element={<Disclaimer />} />
