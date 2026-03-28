@@ -11,7 +11,7 @@ const Disclaimer = () => {
           <section className="disclaimer-section">
             <h2>Content Disclaimer</h2>
             <p>
-              <strong>MStream does not host any files on its server.</strong> All content provided on this platform 
+              <strong>WatchDen does not host any files on its server.</strong> All content provided on this platform 
               is sourced from non-affiliated third parties. The application acts as an interface to access 
               publicly available content from various sources on the internet.
             </p>
@@ -26,7 +26,7 @@ const Disclaimer = () => {
             </p>
             <p>
               The copyrights and trademarks for all movies, TV shows, and other media displayed on this 
-              site belong to their respective owners. MStream makes no claims to own or control the 
+              site belong to their respective owners. WatchDen makes no claims to own or control the 
               content accessed through its interface.
             </p>
           </section>
@@ -34,7 +34,7 @@ const Disclaimer = () => {
           <section className="disclaimer-section">
             <h2>Entertainment Purpose Only</h2>
             <p>
-              This site is provided for entertainment and educational purposes only. MStream is a 
+              This site is provided for entertainment and educational purposes only. WatchDen is a 
               demonstration of modern web development practices and is not intended as a commercial 
               streaming service.
             </p>
@@ -48,7 +48,7 @@ const Disclaimer = () => {
           <section className="disclaimer-section">
             <h2>User Responsibility</h2>
             <p>
-              Users of MStream are solely responsible for:
+              Users of WatchDen are solely responsible for:
             </p>
             <ul className="responsibility-list">
               <li>Complying with their local laws and regulations regarding online content consumption</li>
@@ -61,7 +61,7 @@ const Disclaimer = () => {
           <section className="disclaimer-section">
             <h2>Technical Information</h2>
             <p>
-              MStream utilizes The Movie Database (TMDB) API for movie and TV show information, including:
+              WatchDen utilizes The Movie Database (TMDB) API for movie and TV show information, including:
             </p>
             <ul className="tech-list">
               <li>Movie and TV show metadata (titles, descriptions, ratings)</li>
@@ -78,7 +78,7 @@ const Disclaimer = () => {
             <div className="warning-banner">
               <h3>⚠️ Important Notice</h3>
               <p>
-                The developers of MStream are not responsible for any legal issues that may arise from 
+                The developers of WatchDen are not responsible for any legal issues that may arise from 
                 the use of this application. Users are advised to ensure their streaming activities 
                 comply with applicable laws in their jurisdiction.
               </p>
