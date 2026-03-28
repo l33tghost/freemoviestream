@@ -1,6 +1,6 @@
 {
-"name": "MSTREAM",
-"short_name": "mstream",
+"name": "WATCHDEN",
+"short_name": "watchden",
 "start_url": "/",
 "display": "standalone",
 "description": "Web application for Movie and TV Shows streaming.",
@@ -11,37 +11,37 @@
 "orientation": "any",
 "icons": [
     {
-        "src": "/logo/mstream_(512x512).png",
+        "src": "/logo/watchden-logo1x1.png",
         "sizes": "512x512",
         "type": "image/png",
         "purpose": "any"
     },
     {
-        "src": "/icons/android-icon-192x192.png",
+        "src": "/logo/watchden-logo1x1.png",
         "sizes": "192x192",
         "type": "image/png",
         "purpose": "any"
     },
     {
-        "src": "/icons/apple-icon-180x180.png",
+        "src": "/logo/watchden-logo1x1.png",
         "sizes": "180x180",
         "type": "image/png",
         "purpose": "any"
     },
     {
-        "src": "/icons/favicon-96x96.png",
+        "src": "/logo/watchden-logo1x1.png",
         "sizes": "96x96",
         "type": "image/png",
         "purpose": "any"
     },
     {
-        "src": "/icons/favicon-32x32.png",
+        "src": "/logo/watchden-logo1x1.png",
         "sizes": "32x32",
         "type": "image/png",
         "purpose": "any"
     },
     {
-        "src": "/icons/favicon-16x16.png",
+        "src": "/logo/watchden-logo1x1.png",
         "sizes": "16x16",
         "type": "image/png",
         "purpose": "any"
@@ -69,36 +69,36 @@
     {
       "name": "Home Page",
       "url": "/home",
-      "description": "Home page for MSTREAM",
+      "description": "Home page for WATCHDEN",
       "icons": [{
-        "src": "/icons/favicon-96x96.png",
+        "src": "/logo/watchden-logo1x1.png",
         "sizes": "96x96"
       }]
     },
     {
       "name": "Movie Page",
       "url": "/movies",
-      "description": "Movie page for MSTREAM",
+      "description": "Movie page for WATCHDEN",
       "icons": [{
-        "src": "/icons/favicon-96x96.png",
+        "src": "/logo/watchden-logo1x1.png",
         "sizes": "96x96"
       }]
     },
     {
       "name": "TV Shows Page",
       "url": "/tv-shows",
-      "description": "TV Shows page for MSTREAM",
+      "description": "TV Shows page for WATCHDEN",
       "icons": [{
-        "src": "/icons/favicon-96x96.png",
+        "src": "/logo/watchden-logo1x1.png",
         "sizes": "96x96"
       }]
     },
     {
       "name": "Popular Page",
       "url": "/popular",
-      "description": "Popular page for MSTREAM",
+      "description": "Popular page for WATCHDEN",
       "icons": [{
-        "src": "/icons/favicon-96x96.png",
+        "src": "/logo/watchden-logo1x1.png",
         "sizes": "96x96"
       }]
     }
